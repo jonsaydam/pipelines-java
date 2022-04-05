@@ -22,11 +22,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: UniversalPackages@0
+- task: PublishBuildArtifacts@1
   inputs:
-    command: 'publish'
-    publishDirectory: '$(Build.ArtifactStagingDirectory)'
-    feedsToUsePublish: 'internal'
-    vstsFeedPublish: '364bf4c3-4287-4b85-8775-6089514b0254/7b9286fa-a454-4d50-8256-bcdbb60b90fd'
-    vstsFeedPackagePublish: 'v1.0'
-    versionOption: 'patch'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
