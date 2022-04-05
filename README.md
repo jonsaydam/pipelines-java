@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/EricJon/Training01/_apis/build/status/jonsaydam.pipelines-java?branchName=master)](https://dev.azure.com/EricJon/Training01/_build/latest?definitionId=1&branchName=master)
 
 # Contributing
 
